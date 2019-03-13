@@ -1,0 +1,69 @@
+
+/* 전체Label 
+
+Label {
+	-fx-padding:5;
+	-fx-background-color:blue;
+	-fx-text-fill:white;
+}
+Label.lblClass {
+	-fx-padding:5;
+	-fx-background-color:black;
+	-fx-text-fill:white;
+}
+Button.lblClass2 {
+	-fx-padding:5;
+	-fx-background-color:#868C92;
+	-fx-border-insets:1;
+	-fx-border-color:red,green;
+	-fx-border-width:0.5,0.5;
+	-fx-text-fill:black;
+}
+
+ 전체Button 
+	Button{
+ -fx-padding:5;
+ -fx-background-color:darkgreen;
+ -fx-text-fill:white;
+	}
+	
+	Button:hover{
+ -fx-padding:5;
+ -fx-background-color:#000080;
+ -fx-text-fill:white;
+	}
+	Button:pressed{
+ -fx-padding:5;
+ -fx-background-color:#800080;
+ -fx-text-fill:white;
+	}
+ 
+ #lblMsg{
+ -fx-padding:5;
+ -fx-pont-size:12pt;
+ -fx-background-color:darkgrey;
+ -fx-pont-family:monospace;
+ -fx-text-fill:black;
+ -fx-font-weight:500;
+ -fx-font-style:italic;
+ 
+ }
+	GridPane{
+	-fx-background-color:white;
+	}
+	
+	TextField{
+	-fx-prompt-text-fill:linear-gradient(darkred,lightpink);
+	-fx-background-color:lightgrey
+	}
+		TextField:focused{
+ -fx-padding:5;
+ -fx-background-color:#FFFFFF;
+ -fx-text-fill:black;
+	}
+		
+	PasswordField{
+	-fx-prompt-text-fill:linear-gradient(darkred,lightpink);
+	-fx-background-color:lightgrey
+		}
+		 */

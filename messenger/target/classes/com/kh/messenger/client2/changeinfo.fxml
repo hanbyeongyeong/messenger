@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="573.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kh.messenger.client2.MemberJoinController">
+	<top>
+		<Label alignment="CENTER" prefHeight="83.0" prefWidth="401.0" style="-fx-background-color: #000000;" text="회원정보 수정" textFill="#f8f5f5" textOverrun="CLIP" BorderPane.alignment="CENTER">
+			<font>
+				<Font name="Agency FB" size="30.0" />
+			</font>
+		</Label>
+	</top>
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="107.0" prefWidth="404.0" spacing="60.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+			<children>
+				<Button id="infoBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#memberjoin" prefHeight="26.0" prefWidth="110.0" text="수정" textAlignment="CENTER">
+					<font>
+						<Font name="Agency FB" size="14.0" />
+					</font>
+				</Button>
+				<Button id="infoCloseBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  prefHeight="26.0" prefWidth="110.0" text="취소">
+					<font>
+						<Font name="Agency FB" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</HBox>
+	</bottom>
+	<center>
+		<GridPane alignment="CENTER" prefHeight="367.0" prefWidth="249.0" style="-fx-background-color: #001E12;" BorderPane.alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="107.0" minWidth="63.0" prefWidth="107.0" />
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="251.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="85.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="363.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="363.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="377.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="363.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="363.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="363.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label alignment="CENTER" text="아이디" textFill="#f5f2f2">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<Label text="비밀번호" textFill="#f5f2f2" GridPane.rowIndex="1">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<TextField fx:id="id" prefHeight="23.0" prefWidth="224.0" GridPane.columnIndex="1">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</TextField>
+				<PasswordField fx:id="pw" GridPane.columnIndex="1" GridPane.rowIndex="1">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</PasswordField>
+				<Label text="비밀번호확인" textFill="#f5f2f2" GridPane.rowIndex="2">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<Label text="전화번호" textFill="#f5f2f2" GridPane.rowIndex="3">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<Label text="닉네임" textFill="#f5f2f2" GridPane.rowIndex="4">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<PasswordField fx:id="pwchk" GridPane.columnIndex="1" GridPane.rowIndex="2">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</PasswordField>
+				<TextField fx:id="tel" GridPane.columnIndex="1" GridPane.rowIndex="3">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</TextField>
+				<TextField fx:id="nickName" GridPane.columnIndex="1" GridPane.rowIndex="4">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</TextField>
+				<Label contentDisplay="TOP" text="성별" textFill="#f5f2f2" GridPane.rowIndex="5">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<Label text="주소" textFill="#f5f2f2" GridPane.rowIndex="6">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<Label text="생년월일" textFill="#f5f2f2" GridPane.rowIndex="7">
+					<font>
+						<Font name="Agency FB" size="15.0" />
+					</font>
+				</Label>
+				<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+					<fx:define>
+					 <ToggleGroup fx:id="sex" /> 
+					</fx:define>
+					<children>
+						<RadioButton fx:id="sex1" contentDisplay="CENTER" mnemonicParsing="false" text="남자" userData="남"> 
+						<toggleGroup>
+						 <ToggleGroup fx:id="sex" />
+						</toggleGroup>
+						</RadioButton>
+						<RadioButton fx:id="sex2" contentDisplay="CENTER" mnemonicParsing="false" text="여자" toggleGroup="$sex" userData="여" />
+					</children>
+				</HBox>
+				<ComboBox fx:id="region" prefHeight="23.0" prefWidth="231.0" promptText="지역" GridPane.columnIndex="1" GridPane.rowIndex="6">
+					<padding>
+						<Insets left="30.0" right="10.0" />
+					</padding>
+					<items>
+						<FXCollections fx:factory="observableArrayList">
+							<String fx:value="서울" />
+							<String fx:value="경기도" />
+							<String fx:value="강원도" />
+							<String fx:value="제주도" />
+							<String fx:value="경상도" />
+							<String fx:value="충청도" />
+							<String fx:value="전라도" />
+						</FXCollections>
+					</items>
+				</ComboBox>
+				<DatePicker fx:id="birth" prefHeight="23.0" prefWidth="233.0" promptText="생년월일을 입력하세요" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <FlowPane prefHeight="60.0" prefWidth="314.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <children>
+                  <Label fx:id="msg" contentDisplay="CENTER" prefHeight="58.0" prefWidth="289.0" textFill="#f5eaea">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+               </children>
+            </FlowPane>
+			</children>
+		</GridPane>
+	</center>
+</BorderPane>

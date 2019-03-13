@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="242.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="343.0" prefWidth="600.0" style="-fx-background-color: #002812;">
+         <children>
+            <Label alignment="CENTER" text="삭제하고자 하는 친구가 맞습니까?" textFill="#ebe8e8" />
+         </children>
+      </HBox>
+      <HBox prefHeight="128.0" prefWidth="600.0" />
+      <Button id="delFrBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="245.0" text="예" />
+      <Button id="delFrCloseBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="246.0" text="아니요" />
+   </children>
+</VBox>
