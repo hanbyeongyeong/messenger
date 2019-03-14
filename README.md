@@ -32,6 +32,7 @@ JAVA를 이용한 메신저 구현
 * 자바 기술로 만들어진 메신저 프로그램
 * view는 javaFX 통해 구현 /server는 3-tier방식 (쓰레드풀로 구현)
 * 개발자: 한병영
+* 관련영상: https://www.youtube.com/watch?v=VRmN3Wz94Yo&feature=youtu.be
 
 <hr>
 
